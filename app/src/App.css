@@ -1,0 +1,2 @@
+/* Keep global layout neutral — theme lives in index.css */
+.App { min-height: 100vh; background: #F5F1E8; }
