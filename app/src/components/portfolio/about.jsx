@@ -68,18 +68,18 @@ function Recognition() {
     );
 }
 
-function WorkspaceStrip({ workspace, moodboard }) {
-    return (
-        <div className="mt-20 grid md:grid-cols-12 gap-6">
-            <div className="md:col-span-7 aspect-[16/10] overflow-hidden rounded-sm">
-                <img src={workspace} alt="Workspace" className="w-full h-full object-cover" />
-            </div>
-            <div className="md:col-span-5 aspect-[16/10] overflow-hidden rounded-sm">
-                <img src={moodboard} alt="Moodboard" className="w-full h-full object-cover" />
-            </div>
-        </div>
-    );
-}
+// function WorkspaceStrip({ workspace, moodboard }) {
+//     return (
+//         <div className="mt-20 grid md:grid-cols-12 gap-6">
+//             <div className="md:col-span-7 aspect-[16/10] overflow-hidden rounded-sm">
+//                 <img src/>
+//             </div>
+//             <div className="md:col-span-5 aspect-[16/10] overflow-hidden rounded-sm">
+//                 <img src/>
+//             </div>
+//         </div>
+//     );
+// }
 
 export default function About() {
     return (
@@ -101,7 +101,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <WorkspaceStrip workspace={profile.workspace} moodboard={profile.moodboard} />
+                {/*<WorkspaceStrip workspace={profile.workspace} moodboard={profile.moodboard} />*/}
             </div>
         </section>
     );

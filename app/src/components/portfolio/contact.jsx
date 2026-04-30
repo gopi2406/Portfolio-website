@@ -200,21 +200,6 @@ function ContactStatement({ onCopyEmail, copied }) {
           </span>
         </button>
 
-        <button
-          type="button"
-          onClick={() =>
-            toast("Calendar opening soon", {
-              description: "For now, drop your inquiry below.",
-            })
-          }
-          className="inline-flex items-center justify-between gap-4 rounded-full border border-[#141414]/20 px-5 py-3 hover:border-[#141414] transition-colors"
-        >
-          <span className="font-display text-[15px]">
-            Book a 20-min intro call
-          </span>
-
-          <ArrowUpRight size={16} />
-        </button>
       </div>
 
       <div className="mt-8 grid grid-cols-2 gap-6">
@@ -229,7 +214,7 @@ function ContactStatement({ onCopyEmail, copied }) {
           <div className="font-mono-ui text-[10px] tracking-[0.22em] uppercase text-[#141414]/60 mb-1">
             Hours
           </div>
-          <div className="text-[14px]">Mon — Fri</div>
+          <div className="text-[14px]">Mon — Sat</div>
         </div>
       </div>
     </div>

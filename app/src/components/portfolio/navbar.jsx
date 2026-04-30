@@ -30,7 +30,7 @@ export default function Navbar() {
                     <span>
                         <span className="font-display text-[17px] leading-none">Gopi Prajapati</span>
                         <span className="block font-mono-ui text-[10px] tracking-[0.18em] uppercase text-[#141414]/60 mt-1">
-                            Designer — Portfolio / 2026
+                             Design Portfolio {new Date().getFullYear()}
                         </span>
                     </span>
                 </a>
