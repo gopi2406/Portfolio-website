@@ -7,7 +7,7 @@ export default function Process() {
             <div className="max-w-[1400px] mx-auto px-6 md:px-10">
                 <div className="flex items-center gap-3 font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#141414]/60 mb-10">
                     <span className="w-8 h-px bg-[#141414]/40" />
-                    Process — P · 04
+                    Process — P · 06
                 </div>
 
                 <h2 className="font-display text-[clamp(2rem,5.4vw,4rem)] leading-[1.02] tracking-[-0.015em] max-w-[20ch] mb-16">

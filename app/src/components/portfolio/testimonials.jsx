@@ -72,7 +72,7 @@ export default function Testimonials() {
             <div className="max-w-[1400px] mx-auto px-6 md:px-10">
                 <div className="flex items-center gap-3 font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#F5F1E8]/60 mb-12">
                     <span className="w-8 h-px bg-[#F5F1E8]/40" />
-                    Kind Words — T · 05
+                    Kind Words — T · 07
                 </div>
 
                 <div className="grid md:grid-cols-12 gap-10 items-start">

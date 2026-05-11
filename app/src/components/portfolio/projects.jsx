@@ -99,7 +99,11 @@ function ProjectCover({ project }) {
   return (
     <div
       className="relative overflow-hidden rounded-sm"
+<<<<<<< HEAD
       style={{ backgroundColor: project.color, aspectRatio: "16 / 10" }}
+=======
+      style={{aspectRatio: "16 / 10" }}
+>>>>>>> 1a0e323 (add original video on intro section)
     >
       <img
         src={project.cover}

@@ -6,26 +6,34 @@ import { toast } from "sonner";
 const INITIAL_FORM = {
   name: "",
   email: "",
+  subject: "",
+  contact: "",
   message: "",
+  from: "",
 };
 
 function validateInquiry(form) {
-  if (!form.name || !form.email || !form.message) {
-    return "Please fill in your name, email and message.";
+  if (!form.name || !form.email || !form.message || !form.subject || !form.contact) {
+    return "Please fill in all required fields.";
   }
   return null;
 }
 
 async function sendToSlack(form) {
-  const res = await fetch("http://localhost:5000/api/slack", {
+  const res = await fetch(import.meta.env.VITE_API_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
+      from: "Gopi Prajapati",
       name: form.name,
       email: form.email,
+      subject: form.subject,
+      contact: form.contact,
       message: form.message,
+
+
     }),
   });
 
@@ -233,7 +241,7 @@ function ContactForm({
       onSubmit={submit}
       className="md:col-span-7 bg-[#EFEADE] rounded-sm p-6 md:p-8 border border-[#141414]/10 self-start"
     >
-      <div className="font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#141414]/60 mb-5">
+      <div className="font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#141414]/60 mb-7">
         Project Inquiry — Form
       </div>
 
@@ -242,7 +250,7 @@ function ContactForm({
           label="Your Name"
           value={form.name}
           onChange={(value) => update({ name: value })}
-          placeholder="John Doe"
+          placeholder="Enter Your Name"
         />
 
         <Field
@@ -250,11 +258,28 @@ function ContactForm({
           type="email"
           value={form.email}
           onChange={(value) => update({ email: value })}
-          placeholder="john@example.com"
+          placeholder="Enter Your Email"
         />
-      </div>
 
-      <div className="mt-5">
+
+      <Field
+          label="Subject"
+          type="text"
+          value={form.subject}
+          onChange={(value) => update({ subject: value })}
+          placeholder="Project Inquiry"
+      />
+
+  <Field
+      label="Contact"
+      type="tel"
+      value={form.contact}
+      onChange={(value) => update({ contact: value })}
+      placeholder="+91 0000000000"
+  />
+</div>
+
+      <div className="mt-7">
         <label className="font-mono-ui text-[10px] tracking-[0.22em] uppercase text-[#141414]/60 mb-2 block">
           Tell me about the project
         </label>
@@ -318,7 +343,7 @@ export default function Contact() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="flex items-center gap-3 font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#141414]/60 mb-10">
           <span className="w-8 h-px bg-[#141414]/40" />
-          Contact — C · 06
+          Contact — C · 08
         </div>
 
         <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-start">

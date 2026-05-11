@@ -10,7 +10,12 @@ import Testimonials from "../components/portfolio/testimonials";
 import Contact from "../components/portfolio/contact";
 import Footer from "../components/portfolio/footer";
 import Navbar from "../components/portfolio/navbar";
+<<<<<<< HEAD
 
+=======
+import Intro from "../components/portfolio/intro";
+import Credentials from "../components/portfolio/Credentials.jsx";
+>>>>>>> 1a0e323 (add original video on intro section)
 export default function Home() {
   return (
     <>
@@ -45,7 +50,13 @@ export default function Home() {
           <Hero />
           <Projects />
           <About />
+<<<<<<< HEAD
           <Services />
+=======
+          <Intro/>
+          <Services />
+          <Credentials/>
+>>>>>>> 1a0e323 (add original video on intro section)
           <Process />
           <Testimonials />
           <Contact />

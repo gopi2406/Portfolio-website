@@ -8,7 +8,7 @@ function HeroMeta() {
         <div className="flex flex-wrap items-center justify-between gap-4 font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#141414]/60 mb-14 md:mb-20">
             <span>© 2021—2026 — Gopi Prajapati</span>
             <span className="hidden md:inline">{profile.location}</span>
-            <span>Portfolio Vol. 07</span>
+            {/*<span>Portfolio Vol. 07</span>*/}
         </div>
     );
 }

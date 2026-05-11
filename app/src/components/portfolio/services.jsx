@@ -8,7 +8,7 @@ function ServiceHeader() {
             <div className="md:col-span-5">
                 <div className="flex items-center gap-3 font-mono-ui text-[11px] tracking-[0.22em] uppercase text-[#141414]/60 mb-5">
                     <span className="w-8 h-px bg-[#141414]/40" />
-                    Services — S · 03
+                    Services — S · 04
                 </div>
                 <h2 className="font-display text-[clamp(2rem,5.2vw,3.8rem)] leading-[1.02] tracking-[-0.015em]">
                     Four ways we can <em className="italic text-[#B8593C] font-normal">work together</em>.
