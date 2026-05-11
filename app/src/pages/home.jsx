@@ -10,16 +10,12 @@ import Testimonials from "../components/portfolio/testimonials";
 import Contact from "../components/portfolio/contact";
 import Footer from "../components/portfolio/footer";
 import Navbar from "../components/portfolio/navbar";
-<<<<<<< HEAD
-
-=======
 import Intro from "../components/portfolio/intro";
 import Credentials from "../components/portfolio/Credentials.jsx";
->>>>>>> 1a0e323 (add original video on intro section)
+
 export default function Home() {
   return (
     <>
-      {/* ✅ METADATA (SEO + LinkedIn preview) */}
       <Helmet>
         <title>Gopi Prajapati | UI/UX & Graphic Designer</title>
 
@@ -33,34 +29,32 @@ export default function Home() {
           content="UI UX Designer, Portfolio, Figma, Web Design, App Design, Graphic Design"
         />
 
-        {/* Open Graph (LinkedIn / WhatsApp preview) */}
         <meta property="og:title" content="Gopi Prajapati Portfolio" />
+
         <meta
           property="og:description"
           content="Explore UI/UX, SaaS dashboard, mobile app and graphic design projects."
         />
+
         <meta property="og:image" content="/preview.png" />
         <meta property="og:type" content="website" />
       </Helmet>
 
-      {/* ✅ YOUR ORIGINAL UI (UNCHANGED) */}
       <div className="relative min-h-screen bg-[#F5F1E8] text-[#141414]">
         <Navbar />
+
         <main>
           <Hero />
           <Projects />
           <About />
-<<<<<<< HEAD
+          <Intro />
           <Services />
-=======
-          <Intro/>
-          <Services />
-          <Credentials/>
->>>>>>> 1a0e323 (add original video on intro section)
+          <Credentials />
           <Process />
           <Testimonials />
           <Contact />
         </main>
+
         <Footer />
       </div>
     </>
