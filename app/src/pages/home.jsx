@@ -10,7 +10,7 @@ import Testimonials from "../components/portfolio/testimonials";
 import Contact from "../components/portfolio/contact";
 import Footer from "../components/portfolio/footer";
 import Navbar from "../components/portfolio/navbar";
-import Intro from "../components/portfolio/intro";
+import Intro from "../components/portfolio/Intro.jsx";
 import Credentials from "../components/portfolio/Credentials.jsx";
 
 export default function Home() {
