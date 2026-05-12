@@ -41,7 +41,7 @@ export const projectsByCategory = {
       client: "",
       year: "2026",
       tags: ["Website", "Corporate", "UI Design"],
-      cover: "Website Design.png",
+      cover: "./Website-Design.png",
       summary: "A clean and professional corporate website designed to enhance brand presence and user trust.",
       color: "#1F2A24",
     },

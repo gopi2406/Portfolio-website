@@ -65,29 +65,31 @@ function SitemapList() {
 }
 
 function ElsewhereList({ socials, email }) {
-    return (
-        <>
-            <ul className="space-y-2">
-                {socials.map((s) => (
-                    <li key={s.label}>
-                        <a
-                            href={s.href}
-                            className="inline-flex items-center gap-2 text-[15.5px] text-[#141414]/80 hover:text-[#B8593C] transition-colors"
-                        >
-                            {s.label}
-                            <ArrowUpRight size={14} className="opacity-60" />
-                        </a>
-                    </li>
-                ))}
-            </ul>
-            <a
-                href={`mailto:${email}`}
-                className="mt-6 inline-flex items-center gap-2 font-display text-[19px] text-[#141414] underline decoration-[#141414]/30 underline-offset-4 hover:text-[#B8593C] hover:decoration-[#B8593C]"
-            >
-                {email}
-            </a>
-        </>
-    );
+  return (
+    <>
+    <ul className="space-y-2">
+      {socials.map((s) => (
+        <li key={s.label}>
+<a
+          href={s.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[15.5px] text-[#141414]/80 hover:text-[#B8593C] transition-colors"
+          >
+          {s.label}
+          <ArrowUpRight size={14} className="opacity-60" />
+        </a>
+        </li>
+        ))}
+    </ul>
+<a
+    href={`mailto:${email}`}
+    className="mt-6 inline-flex items-center gap-2 font-display text-[19px] text-[#141414] underline decoration-[#141414]/30 underline-offset-4 hover:text-[#B8593C] hover:decoration-[#B8593C]"
+    >
+    {email}
+    </a>
+</>
+);
 }
 
 function Colophon({ year }) {

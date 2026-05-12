@@ -95,10 +95,11 @@ function CategoryFilter({ categories, active, onChange }) {
 }
 
 // ── ProjectCover ──────────────────────────────────────────────────────────────
-function ProjectCover({ project }) {
+function ProjectCover({ project }) { 
   return (
     <div
       className="relative overflow-hidden rounded-sm"
+      style={{ aspectRatio: "16/10" }}
     >
       <img
         src={project.cover}
