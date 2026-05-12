@@ -381,13 +381,6 @@ export const clients = [];
 export const nav = [
   { label: "Work",     href: "#work" },
   { label: "About",    href: "#about" },
-<<<<<<< HEAD
-  { label: "Services", href: "#services" },
-=======
-  {label: "Introduction", href: "#intro" },
-  { label: "Services", href: "#services" },
-  {label: "Credentials", href: "#credentials" },
->>>>>>> 1a0e323 (add original video on intro section)
   { label: "Process",  href: "#process" },
   { label: "Contact",  href: "#contact" },
 ];
