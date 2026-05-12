@@ -21,7 +21,8 @@ export const profile = {
     { label: "Dribbble",  href: "https://dribbble.com/OptimityLogics" },
     { label: "Behance",   href: "https://www.behance.net/optimitylogics" },
     { label: "LinkedIn",  href: "https://www.linkedin.com/in/gopi-prajapati-308752199/" },
-    { label: "Read.cv",   href: "#" },
+    { label: "Upwork",   href: "https://www.upwork.com/freelancers/~01095c17530732d5be?mp_source=share" },
+    { label: "Contra",   href: "https://contra.com/gopi_prajapati_n52fofbj?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=gopi_prajapati_n52fofbj" },
   ],
   marqueeWords: [
     "Website Design", "Design Systems", "Motion",
